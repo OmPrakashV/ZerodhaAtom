@@ -34,7 +34,7 @@ Put the credential in following format in credential_file
 '''
 
 #Get the crederntial from following Json File change the path if required
-credential_file = '/home/harpal/Desktop/creds.json'
+credential_file = 'creds.json'
 with open(credential_file, 'rb') as input:
     usr_creds= json.load(input)
 today = dt.datetime.today()
