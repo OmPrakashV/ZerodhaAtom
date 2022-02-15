@@ -86,7 +86,8 @@ class ZerodhaConnect(threading.Thread):
             chrome_options.add_argument('--no-sandbox')
             chrome_options.add_argument('--ignore-certificate-errors')
         from webdriver_manager.chrome import ChromeDriverManager
-        self.driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
+        #self.driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=chrome_options)
+        self.driver = webdriver.Chrome(ChromeDriverManager().install())
         # Call the Thread class's init function
         threading.Thread.__init__(self)
         
